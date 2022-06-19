@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    ` THẺ HTML CƠ BẢN 
+        div : bọc 1 khối nào đó
+        p : hiển thị đoanh văn bản 
+        h1, h2 , h3, h4, h5, h6 : thẻ tiêu đề ( 1 web dùng 1 H1)
+        <a href="duong dan">chua linh duong dan</a>
+            target="_blank" mở tab mới khi nhấn
+            rel="noopener noreferrer" ngăn các tab cùng load
+        <img src="duong dan hinh anh" alt="tieude"> chèn hình ảnh
+        <ol>
+            <li></li> danh sách có thứ tự (làm mục lục)
+        </ol>
+        <ul>
+            <li></li> danh sách không có thứ tự (làm menu)
+        </ul>
+        thẻ cematic 
+            <header>hiển thị đầu trang</header>
+            <footer>hiển thị cuối trang</footer>
+            <aside>hiển thị bên trái</aside>
+            <nav>thẻ hiển thị menu</nav>
+            <main>thẻ hiển thị nội dung chính</main>
+            <section>bao một khối</section>
+            <iframe src="" frameborder="0">nhúng một nguồn khác (map, yt,vv..)</iframe>
+            <span>nội dung chữ ngắn</span>
+            <strong>in đậm</strong> / <b>in đậm</b>
+            <em>in nghiêng</em> / <i>in nghiêng</i>
+
+    2 BEM block Element modifier
+        phương pháp đặt tên class
+        Block__elemnt--modifier
+        Block : chủ thể chính laptop
+        element : thành phần  keyborad
+        modifier : chủng loại big
+
+    3 EMMET
+        .demo = > <div class="demo"></div>
+        Alt + mũi tên lên xuống di chuyển dòng code
+        Shift + Alt mũi tên lên xuống : coppy 1 dòng
+        bôi đen + ctrl D : chọn những cái giống nhau
+        ul>li*10{lorem} => tạo 10 thẻ li nội dung lorem 
+        ul>li*10{lorem$} => tạo 10 thẻ li nội dung 1 =10
+        h1+p : tạo 2 thẻ h1 vả p 
+        h1.class+p.dsc : thẻ h1 với class là class và p class dsc
+
+    CSS CƠ BẢN 
+
+    4.CSS RESET
+        reset.css link vào file html coppy gg
+    
+    5. COLOR
+        hiển thị màu chữ
+        p {
+            color: màu (hexa, rgb, name, rgba độ mờ 0->1)
+        }
+        màu nền 
+        p {
+            background-color : màu 
+            phải set kèm width và height
+        }
+
+    6. KÍCH THƯỚC
+        EMMET CSS
+            w500 = > width : 500px
+            h500 = > height : 500px 
+            bgc = > background-color :
+        overflow: hidden; ẩn nội dung tràn ra ngoài 
+        overflow-y: auto; tạo thanh trượt khi nội dung dài 
+        min-height: 200px; nếu nội dung cao quá 200px sẽ tự động tăng chiều cao
+
+    7. BACK-GROUND
+        hình nền phải set w và h 
+        background {
+            background-image: url (link ảnh)
+            width: ;
+            height: ;
+            background-positon: center center; căn ảnh ở giữa
+            background-size: cover; ảnh phủ toàn trang 
+            background-repeat : no-repeat; không lặp lại ảnh nền 
+            background-attachment: fixed; không tạo thanh cuộn hình nền 
+        }
+        background {
+            màu url(link ảnh nền) no-repeat center center / cover;
+        } viết gọn
+
+    8. ĐƠN VỊ HAY DÙNG CSS
+        100vw , 100vh : kích thước khung hình (100%)
+        px : đơn vị cố định
+        mặc định 
+            font-size: 1 em = 1 rem = 16px;
+        em và rem
+            em : phụ thuộc vào font-size của chính nó hoặc phần tử chứa nó
+            rem : chỉ phụ thuộc vào font-size của thẻ html
+
+    9. BODER 
+        boder {
+            boder: 2px solid black; đường viền dày 2px loại solid màu black
+            boder-top, boder-left, boder-bottom, boder-right : các hướng boder 
+            boder: 2px 5px : top-bottom 2px , left-right 5px 
+            boder-radius : 5px; bo góc 5px
+            boder-radius: 50%; bo tròn
+        }
+
+    10.MARGIN
+        .margin {
+            width: ;
+            height: ;
+            background-color: ;
+            margin: top right bottom left;
+            margin-left: auto; đưa khối sang bên phải + margin-right: auto; đưa khối ra giữa
+            margin collapse : khi 2 khối chung margin lấy margin giá trị lớn hơn
+            có thể sử dụng giá trị âm 
+        }
+
+    11. PADDING
+        .padding {
+            width: ;
+            height: ;
+            background-color: ;
+            padding: top right bottom left;
+        }
+
+    12. BOX-SIZING 
+        box-sizing: mặc định content-box ( phần tử + padding + boder)
+        box-sizing: boder-box cố định w và h kể ả padding và boder
+        * {
+            box-sizing: border-box; dùng cho cả trang web 
+        }
+    13. DISPLAY
+        chuyển các thẻ inline thành block để sử dụng css
+        display: inline-block; hoặc display: block;
+        display: none; phần tử sẽ mất hẳn 
+    
+    14.FONT 
+        Thay đổi font chữ
+        gg font => chọn font => chọn độ đậm => embed => link => coppy => dán vào file html
+        body {
+            font-family: 'tên font', sanserif;
+            font-size: ; kích thước font chữ
+            font-weight : ; độ đậm nhạt 
+            font-style: ; in nghiêng
+        }
+
+    15. CHỮ 
+        p {
+            line-height: 1 2 1.5 khoảng cách các dòng
+            text-align: căn vị trí chữ 
+            text-align : justify; căn giữa
+            letter-spacing: khoảng cách các kí tự
+            word-spacing: khoảng cách các từ
+            white-space: no-gwrap không xuống dòng
+            overflow: hidden; ẩn nội dung tràn ra ngoài
+            text-overflow: ellipsis; hiển thị dấu 3 chấm trên 1 hàng
+
+            <!-- hiển thị dấu 3 chấm ở hàng mong muốn -->
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: số hàng muốn hiển thị;
+            overflow: hidden; ẩn nội dung tràn ra ngoài
+            text-overflow: ellipsis; hiển thị dấu 3 chấm trên 1 hàng
+
+            <!-- xuống hàng -->
+            word-break: break-all; xuống hàng tách từ
+            word-break: break-word; xuống hàng theo từ
+        }
+
+    16. HÌNH ẢNH 
+        img {
+            display: block; đưa về thẻ block 
+            max-with: 100% độ rộng phần tử cha chứa nó
+            width: ;
+            height: ;
+            object-fit: cover tự co ảnh không bị méo.
+            object-positon: top lấy ảnh từ góc trên không bị méo 
+            text-align : center đưa thẻ inline ra giữa
+            boder-radius : bo góc
+        }
+
+    17. PSEUDO
+        .pseudo:hover {
+            hiệu ứng khi rê chuột vô
+        }
+        .pseudo:active {
+            hiệu ứng khi nhấn
+        }
+        .pseudo:visited {
+            hiệu ứng sau khi đã nhấn 
+        }
+    18. GRADIENT 
+        <!-- nền  -->
+        gradient {
+            width
+            height
+            background-image: linear-gradient(direction, màu 1, màu 2);
+                direction : hướng (to right, to left....)
+                color 
+        }
+        <!-- chữ -->
+        p {
+            font-weight 
+            font-size
+            background-image: linear-gradient (direction,màu 1,màu 2)
+            display: inline-block ( chiều ngang chỉ chiếm phần nó có thể chứa bg = độ dài nội dung)
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text; 
+        }
+        <!-- hình nền kết hợp hình + màu -->
+        background-img {
+            width
+            height
+            background-image: linear-gradient (hướng,màu 1,màu2) , url(link ảnh nền)
+                <!-- cái nào hiện trước viết trước, dùng mã màu rgb opacity -->
+            background-size: cover (để hình phủ hết nền)
+        }
+
+    19. OPACITY 0 , DISPLAY: NONE , VISIBILITY hidden
+        opacity: 0; phần tử không hiện nhưng vẫn chiếm diện tích
+        visibility: hidden phần tử không hiện, vẫn chiếm diện tích nhưng không tương tác được
+        display: none phẩn tử mất hoàn toàn
+
+    20. SHADOW
+        <!-- khối -->
+        shadow{
+            width
+            height
+            background-color
+            margin
+            box-shadow: 
+            x y blur scale color : (x y hướng đổ bóng, blur độ mờ. scale độ lớn, color : màu) 
+        }
+        <!-- chữ -->
+        text {
+            text-shadow : x y bler color;
+        }
+
+    21. BIẾN CƠ BẢN 
+        <!-- gán 1 giá trị cho 1 biến  -->
+        khai báo biến 
+        :root {
+            --tên biến: 
+            --primery-color : black;
+        }
+        <!-- sử dụng biến  -->
+        var(tên biến)
+
+    22. CHILD SELECTOR 
+        thẻ cha thẻ con:first-child (chọn phần tử đầu tiên)
+        thẻ cha thẻ con:last-child (chọn phần tử cuối cùng)
+        thẻ cha thẻ con:nth-child(2) chọn phần tử số 2 từ trên xuống
+        thẻ cha thẻ con:nth-last-child(2) chọn phần tử thứ 2 từ dưới lên 
+        thẻ cha thẻ con :not: chọn tất cả loại trừ phần tử
+        thẻ con:nth-child(odd) chọn thẻ số lẻ
+        thẻ con:nth-chil(even) chọn thẻ số chắn
+        thẻcon:nth-child(2n+1) chọn theo công thức
+        li:first-child span : trỏ đến thẻ span của thẻ li đầu tiên
+
+    23. TYPE SELECTOR 
+        chọn thẻ theo kiểu của thẻ
+        thẻ con:fist-of-type 
+        thẻ con:nth-of-type(vịt trí phần tử)
+
+    24. COMBINATOR
+        h3 + .title {
+            chọn đến class có tên title đứng sau thẻ h3
+        }
+        h3 ~ .title {
+            chọn đến class có tên title đứng sau thẻ h3
+        }
+
+    25. Celector nâng cao
+        a[href^="https"] {
+            chọn đến thẻ a có thuộc tính href bắt đầu bằng "https"
+        }
+        a[href$="htpps"] {
+            chọn đến thẻ a có thuộc tính href kết thúc bằng "https"
+        }
+        a[href*="https"] {
+            chọn đến thẻ a có thuộc tính href có chứa "https"
+        }
+        div[data-title="value"] {
+            chọn đến div có data-title = "value"
+        }
+        p::first-letter {
+            chọn đến kí tự đầu tiên của thẻ p 
+        }
+        p::first-line {
+            chọn đến dòng đầu tiên của thẻ p
+        }
+
+    26. TRANSITION
+        transition {
+            transition : hiệu ứng thời gian kiểu
+            transiton: background-color 2s linear; đổi màu bg sau 2s
+            transition-delay :2s; 
+            transition: all 0.2s linear (thay đổi toàn bộ)
+        }
+        transition:hover {
+            background-color: màu khác;
+        }
+
+    27. TRANSFORM
+        thay đổi đối tượng ban đầu nhưng đối tượng ban đầu không bị thay đổi về kích thước và vịt trí
+        .transform {
+            width
+            height
+            background-color
+            transform: scaleX(tỉ lệ) scaleY(tỉ lệ); làm ảnh lớn lên theo tỉ lệ theo chiều ngang và dọc
+            transform: scale(tỉ lệ, tỉ lệ);
+            transform: rotate(số độ deg); xoay đối tượng theo số độ (X, Y, Z)
+            transform: translate(X,Y) di chuyển vật thể theo hướng X và Y 
+                100% bằng độ rộng, cao của phần tử
+            transform: scale(2) rotate(45deg) translate(100%,50%)
+            transform: skewX() skewY() tạo hình bình hành theo chiều X và Y
+        }
+
+    28. POSITON 
+        + relative 
+            .position {
+                position: relative
+                dịch chuyển đối tượng dựa vào top right bottom left 
+                z-index : thẻ nào có z-ínex lớn hơn sẽ đè lên thẻ nhỏ hơn 
+            }
+        + absolute
+            .absolute {
+                position: absolute 
+                khi con dùng absolute thẻ cha dùng relative thì phần tử con k chiếm vị trí nữa
+                transform: translate(-50%, -50%) căn chính giữa
+            }
+        + fixed 
+            .fixed {
+                position: fixed;
+                chỉ chạy theo body không chạy theo phần tử cha 
+            }
+
+    29. BEFORE & AFTER
+            .class:before {
+                content: "Nội dung";
+            }
+            .class:after {
+                content: "Nội dung";
+            }
+            <!-- tạo viền bao ngoài đổi màu theo đối tượng chính -->
+            .class {
+                width
+                height
+                boder-radius
+                color 
+                position: relative
+            }
+            .class:after {
+                content: "";
+                boder-radius: inherit; bo góc theo phần tử cha
+                background-color: currentColor; lấy màu theo phần tử cha chứa nó
+                opacity: ; chỉnh độ mờ
+                <!-- tạo độ phủ toàn bộ phần tử cha -->
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%
+                height:100%;
+            }
+            <!-- hiệu ứng hover màu chạy theo hướng từ trái sang -->
+            .class {
+                display: inline-block;
+                background-color: ;
+                transition: color thời gian linear;
+                position: relative;
+                z-index: 1; để khối nằm trên 
+            }
+            .class:after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 100%;
+                top: 0;
+                left: 0;
+                transition: width thời gian linear; 
+                    <!-- (chạy từ phải qua đổi right = 0, trên xuông dưới đổi height 0) -->
+                background-color: màu sắc;
+                z-index : -1 ; để khối nằm dưới
+            }
+            .class:after:hover {
+                width: 100%
+            }
+            .class:hover {
+                color: đổi màu;
+            }
+            <!-- tạo dòng line chạy ngang chữ -->
+            .class {
+                position: relative;
+            }
+            .class:after { (đổi sang thẻ block mới áp dụng)
+                content: "";
+                <!-- tạo đường line -->
+                width: 100%;
+                height: 16px
+                background-color: màu sắc
+                <!-- căn giữa dòng đối tượng -->
+                position: absolute;
+                top :0;
+                left: 0;
+                transform: translateY(-50)%
+            }
+            .class chứa chữ cần line chạy qua {
+                display: inline-block;
+                padding: ;
+                background-color: ;
+                position: relative; để dùng z-index 
+                z-index: 2; đè lên dòng line
+            }
+    30. TABLE
+            bảng gồm các dòng, các dòng chứa ô, ô chứa dữ liệu 
+        <table>
+            <thead> chứa tiêu đề
+                <tr> Các dòng
+                    <caption>Tên của bảng</caption>
+                    <th>các ô tiêu đề</th> bôi đậm, căn giữa
+                </tr>
+            </thead>
+            <tbody> chứa thân
+                <tr>
+                    <td>các ô nội dung</td>
+                </tr>
+            </tbody>
+            <tfoot> chứa dòng cuối
+                <tr>
+                    <td>nội dung</td>
+                </tr>
+            </tfoot>
+        </table>
+        .table {
+            boder: viền bảng;
+            width: 
+            height:
+            cellpadding : căn nội dung ô nội dung
+            colspan="số ô gộp"; chèn vào th hoặc td 
+            rowspan="số dòng gộp" chèn vào th hoặc td 
+        }
+    31.FORM 
+        <form action="link đích đến khi người dùng ấn send"
+                method="cách thức gửi dữ liệu lên server ( post ,url)">
+            <label for="tên id">Chứa nhãn</label>
+            <input type="text" name="phải đặt tên nội dung mới đc gửi đi" id="tên id 
+                                    gán nhãn vào label khi ấn vào label cũng là nhấn vào input"> 
+            <label for="pass" >Nhãn</label>
+            <input type="password" name="pass" id="pass">
+            <!-- tạo chọn 1 trong 2 --> đặt name the input giống nhau mới chọn được 1 trong 2
+            <label for="giá trị 1">Nhãn</label>
+            <input type="radio" value="giá trị" name="tên giá trị" id="giá trị 1">
+            <label for="giá trị 2">Nhãn</label>
+            <input type="radio" value="giá trị" name="tên giá trị" id="giá trị 2">
+            <!-- tạo ô check box --> name giống nhau
+            <label for="">Nhãn</label>
+            <input type="checkbox" name="" value="giá trị gửi lên sv" id="giá trị gắn kèm nhãn">
+            <label for="giá trị gắn kèm nhãn">Nội dung giá trị</label>
+                <!-- checked="" đặt thuộc tính mặc định -->
+            <!-- tạo xổ xuống -->
+            <label for="">Nội dung</label>
+            <select name="tên" id="">
+                <option value="giá trị">nội dung giá trị</option>
+                <option value="giá trị">nội dung giá trị</option>
+                <option value="giá trị">nội dung giá trị</option>
+            </select>
+
+            <label for="">Nội dung</label>
+            <select name="tên" id="" size="số dòng hiện thị" multiple="" (chọn nhiều giá trị)>
+                <option value="giá trị">nội dung giá trị</option>
+                <option value="giá trị">nội dung giá trị</option>
+                <option value="giá trị">nội dung giá trị</option>
+            </select>
+            <!-- hộp đựng văn bản -->
+            <label for="trùng for">Hộp đựng văn bản</label>
+            <textarea name="tên" id="trùng for" rows="số dòng hiển thị" cols="hiển thị kí tự">
+            </textarea>
+            <!-- tạo nút  -->
+            <input type="submit" value="nội dung nút"> gửi nội dung lên sv
+            <input type="button" value="nội dung nút"> ấn được thường chạy mã js
+            <button type="reset/submit/...">Nội dung nút</button>
+            <!-- autofocus="" chuột tự động chọn thẻ có thuộc tính này -->
+            <!-- autocomplete tự động điền dữ liệu đã nhập trước đó -->
+            <fieldset> tạo nhóm nội dung input
+                <legend>Nội dũng nhãn nhóm</legend>
+                <input>
+                <input>
+                <input>
+                <input>
+            </fieldset>
+        </form>
+    32. GRID
+        grid {
+            display: grid;
+            grid-template-colums: kích thước cột kích thước cột ... ;
+            grid-template-rows : kích thước hàng kích thước hàng
+            đơn vị fr tỉ lệ 
+            grid-template-colums: 1fr 1fr 1fr ( 3 cột bằng nhau)
+            grid-colum-gap: kích thước gap 
+            grid-row-gap: kích thước gap
+        }
+        <!-- chia layout khi các khối không đều nhau ( gộp cột, gộp hàng) -->
+        .class phần tử gộp {
+            grid-column: track-line start / track-line-end; gộp cột 
+            grid-row: track-line start / track-line-end ; gộp hàng
+                <!-- có thể thay track-line-end bằng "span + số cột" -->
+        }
+        <!-- dàn layout theo grid-template-areas  -->
+        . class cha {
+            grid-template-areas:
+                "h1 h1 h2 h3"
+                "h4 h5 h2 h3" lưới sơ đồ phân bố đối tượng
+                "h4 h5 h6 h6"
+        }
+        .class con {
+            grid-template-area: h1;
+        }
+    33. PHÍM TẮT
+        
+</body>
+</html>

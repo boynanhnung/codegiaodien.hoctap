@@ -1,0 +1,98 @@
+.body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin: 0 auto;
+    width: 1440px;
+    padding: 46px 150px;
+}
+.header {
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+}
+.logo__img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+.name__brand {
+    font-size: 20px;
+    font-weight: bold;
+}
+.header__account {
+    margin-left: auto;
+}
+.header__account a {
+    text-decoration: none;
+    height: 45px;
+    border-radius: 50px;
+    padding: 13px 45px;
+    font-weight: bold;
+}
+.header__account-signup {
+    color: black;
+}
+.default__button {
+    outline: 1px solid #F53855;
+    color: #F53855;
+}
+.menu__top {
+    margin-left: 157px;
+    display: flex;
+    list-style: none;
+}
+.menu__top li {
+    margin-right: 40px;
+    font-size: 14px;
+    color: #4F5665;
+    transition: 0.2s ease-in-out ;
+}
+.menu__top li:hover {
+    color: #F53855;
+}
+.banner {
+    display: flex;
+    margin-top: 88px;
+}
+.banner__title {
+    width: 50%;
+    margin-right: 41px;
+}
+.banner__img {
+    width: 50%;
+}
+h1 {
+    color: #0B132A;
+    font-size: 50px;
+}
+.desc {
+    margin-bottom: 50px;
+}
+.start {
+    padding: 17.5px 77.5px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #F53838;
+    border-radius: 10px;
+    box-shadow: 10px 10px #f5383831;
+}
+.client {
+    margin-top: 103px;
+    display: flex;
+    width: 1140px;
+    height: 200px;
+    padding: 72.5px 91px;
+}
+.client__item {
+    width: 32%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.client__item i {
+    width: 55px;
+    height: 55px;
+    
+}

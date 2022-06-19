@@ -1,0 +1,196 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 1000px;
+    padding: 20px;
+    background-color: #252B43;
+    font-size: 16px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.header a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.logo__img img {
+    max-width: 150px;
+    max-height: 50px;
+    overflow: hidden;
+
+}
+.header ul {
+    display: flex;
+    margin-left: 150px;
+}
+.header li {
+    margin: 0 15px;
+}
+.account {
+    margin-left: 150px;
+}
+.account a {
+    width: 150px;
+    margin: 0 15px;
+}
+.account a:last-child {
+    width: 150px;
+    height: 50px;
+    background-color: #22A6EF;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.banner {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+}
+.banner__left {
+    width: 35%;
+}
+.banner__left-slogan, .medical span:first-child, .review span:first-child {
+    font-size: 16px;
+    color: #22A6EF;
+    font-weight: 400;
+}
+.banner__title {
+    font-size: 32px;
+    color: aliceblue;
+    margin: 30px 0;
+}
+.banner__left-desc {
+    font-size: 20px;
+    color: aliceblue;
+    margin-bottom: 30px;
+}
+.banner__left-button a {
+    width: 150px;
+    height: 50px;
+    background-color: #22A6EF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: aliceblue;
+}
+.banner__left-button a:last-child {
+    background-color: #252B43;
+    border: 1px solid #22A6EF;
+}
+.member, .reference, .expert {
+    width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.line {
+    width: 70px;
+    height: 5px;
+    background-color: #D44549;
+}
+.content__block {
+    width: 65%;
+}
+.member h2, .reference h2, .expert h2, .medical h2, .review h2 {
+    font-size: 32px;
+    color: aliceblue;
+    margin: 25px 0;
+}
+.member p, .reference p, .expert p, .medical p, .review p {
+    color: aliceblue;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.member a, .reference a, .expert a, .review a {
+    text-decoration: none;
+    color: #22A6EF;
+    align-items: center;
+    font-size: 10px;
+}
+.medical {
+    margin-bottom: 50px;
+    margin-left: 20px;
+    width: 800px;
+    margin-top: 150px;
+}
+.medical__content {
+    width: 600px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+.medical__port {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    width: 600px;
+    margin: 0 auto;
+}
+.medical__port-item {
+    position: relative;
+    background-color: aliceblue;
+}
+.medical__port-item img {
+    width: 100%;
+    overflow: hidden;
+}
+.medical__port span:first-child {
+    position: absolute;
+    transition: 20px 20px;
+    display: block;
+    padding: 2px 5px;
+    background-color: #D44549;
+    color: aliceblue;
+    border-radius: 3px;
+    transform: translate(10px,10px)
+}
+.icon {
+    position: absolute;
+    color: aliceblue;
+    transition: -20px 0px;
+    text-align: center;
+    transform: translate(40px,-30px);
+}
+.item-content {
+    padding: 15px;
+}
+.item-content h3 {
+    font-size: 18px;
+    color:#22A6EF;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.item-content p {
+    color: #252b435b;
+}
+.medical__port-item span {
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+}
+.medical__port-item a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #70B0D3;
+    border-radius: 5px;
+    margin: 5px;
+}
+.review {
+    display: inline-block;
+    width: 800px;
+}
+.review-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+.review-items {
+    background-color: aliceblue;
+}
+.client img {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
